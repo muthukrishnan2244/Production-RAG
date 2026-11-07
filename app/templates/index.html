@@ -1,0 +1,15 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Atlas | Enterprise Knowledge</title><link rel="stylesheet" href="/static/css/styles.css?v=chat-scroll-1"></head>
+<body><div class="shell"><aside class="sidebar"><div class="logo">✦ <span>ATLAS</span><small>Enterprise AI</small></div>
+<div class="eyebrow">WORKSPACE</div><button class="nav active" id="chatTab">◈ &nbsp; Knowledge chat</button>
+<button class="nav" id="docsTab">▤ &nbsp; Documents</button><button class="nav" id="approvalTab">✓ &nbsp; Approvals</button><button class="nav" id="adminTab">◫ &nbsp; Metrics</button>
+<div class="sidebottom">Single-workspace demo · No login</div></aside>
+<main><header><div><span class="eyebrow">YOUR WORKSPACE / KNOWLEDGE</span><h1 id="heading">Ask your organization's knowledge</h1></div><div class="pill">● AWS-powered</div></header>
+<section id="chatView" class="panel"><div class="hero"><div class="spark">✦</div><h2>What can I help you find?</h2><p>Ask questions about your approved documents. Every answer includes its evidence.</p>
+<div class="suggestions"><button data-q="What is our leave policy?">Leave policy ↗</button><button data-q="Summarize the onboarding process">Onboarding ↗</button><button data-q="What are the IT security rules?">IT security ↗</button></div></div>
+<button type="button" id="newChat">+ New conversation</button><div id="messages" aria-live="polite"></div><form id="chatForm" class="composer"><textarea id="question" rows="2" placeholder="Ask a question about company knowledge..." required></textarea><button type="submit">Send ↗</button></form><div class="hint">Answers may be inaccurate. Verify source passages before taking action.</div></section>
+<section id="docsView" class="panel hidden"><h2>Knowledge library</h2><p>Upload an approved PDF, DOCX, TXT or Markdown file. Use non-sensitive demo documents only.</p><form id="uploadForm"><input id="file" type="file" accept=".pdf,.docx,.txt,.md" required><button>Upload document</button></form><div id="docs"></div></section>
+<section id="approvalView" class="panel hidden"><div class="section-header"><div><h2>Human-in-the-loop approvals</h2><p>Review pending requests. Approving records a decision only; no document is deleted or exported.</p></div><button type="button" id="refreshApprovals">Refresh</button></div><div id="approvalSummary" role="status"></div><div id="approvalList" aria-live="polite"></div></section>
+<section id="adminView" class="panel hidden"><h2>Workspace metrics</h2><pre id="metrics">Loading metrics...</pre><h2>Guardrail events</h2><pre id="guardrailMetrics">Loading guardrail metrics...</pre></section>
+<div id="toast" role="status"></div></main></div>
+<script src="/static/js/app.js?v=chat-scroll-1"></script></body></html>

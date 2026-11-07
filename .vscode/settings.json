@@ -1,0 +1,21 @@
+{
+    "sqltools.connections": [
+        {
+            "pgOptions": {
+                "ssl": {
+                    "rejectUnauthorized": true
+                }
+            },
+            "ssh": "Disabled",
+            "previewLimit": 50,
+            "server": "dpg-dbm8e5dg1s2s73cdtpig-a.singapore-postgres.render.com",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "productionragtest",
+            "database": "productionrag",
+            "username": "productionrag_user"
+        }
+    ],
+    "python-envs.defaultEnvManager": "ms-python.python:conda",
+    "python-envs.defaultPackageManager": "ms-python.python:conda"
+}
